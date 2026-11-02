@@ -1,0 +1,53 @@
+.acordeao {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 800px;
+}
+
+.acordeao__item {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.acordeao__item.aberto { border-color: #f59e0b; }
+
+.acordeao__titulo { margin: 0; font-size: 1rem; }
+
+.acordeao__botao {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  border: 0;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.acordeao__botao:hover { background: #f8fafc; }
+
+/* seta gira quando abre */
+.acordeao__seta { transition: transform 0.3s ease; }
+.aberto .acordeao__seta { transform: rotate(180deg); }
+
+/*  Transição suave de abrir/fechar */
+.acordeao__painel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+.aberto .acordeao__painel {
+  grid-template-rows: 1fr;
+}
+.acordeao__conteudo { overflow: hidden; }
+.acordeao__conteudo p {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
