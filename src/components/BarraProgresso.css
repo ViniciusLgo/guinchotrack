@@ -1,0 +1,22 @@
+.barra__topo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.barra__trilho {
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barra__preenchimento {
+  height: 100%;
+  background: #f59e0b;
+  border-radius: 999px;
+  transition: width 0.5s ease; 
+}
+
+.barra__preenchimento.completo { background: #16a34a; }

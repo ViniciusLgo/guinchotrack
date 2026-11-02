@@ -18,3 +18,34 @@ export const STATUS = {
   atendimento: 'Em atendimento',
   manutencao:  'Manutenção',
 };
+
+export const DESTINOS = [
+  'Av. Jorge Amado, 120 - Camaçari',
+  'BA-093, km 8',
+  'Shopping Paralela - Estacionamento',
+  'Rua das Flores, 45 - Lauro de Freitas',
+  'Posto Ipiranga - BR-324',
+];
+
+export const AJUDA = [
+  {
+    pergunta: 'Como despachar um guincho?',
+    resposta: 'Na aba Frota, encontre um guincho com status "Disponível" e clique em "Despachar". Um chamado é criado automaticamente na aba Chamados.',
+  },
+  {
+    pergunta: 'O que significa cada status?',
+    resposta: 'Disponível: pronto para atender. Em atendimento: indo até o cliente ou atendendo. Manutenção: na oficina, não pode ser despachado.',
+  },
+  {
+    pergunta: 'Como acompanho o atendimento?',
+    resposta: 'Na aba Chamados, a barra de progresso mostra o trajeto do guincho até o cliente. Ao chegar em 100%, o guincho chegou ao local.',
+  },
+  {
+    pergunta: 'Como finalizar um chamado?',
+    resposta: 'Quando a barra chegar a 100%, clique em "Finalizar atendimento". O guincho volta automaticamente a ficar disponível.',
+  },
+  {
+    pergunta: 'Posso filtrar os guinchos?',
+    resposta: 'Sim. Use o menu "Status" na aba Frota para ver só os disponíveis, em atendimento ou em manutenção.',
+  },
+];
