@@ -64,3 +64,10 @@
 .chamado__destino { margin: 0; color: #475569; font-size: 0.9rem; }
  
 .vazio { color: #64748b; }
+
+.rodape {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+  padding: 2rem 1rem;
+}

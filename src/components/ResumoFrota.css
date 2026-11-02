@@ -1,0 +1,27 @@
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.resumo__item {
+  background: #fff;
+  border-radius: 10px;
+  border-top: 4px solid;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
+}
+.resumo__item strong { font-size: 1.6rem; }
+.resumo__item span { font-size: 0.8rem; color: #64748b; }
+
+.resumo__item--disponivel  { border-color: #16a34a; }
+.resumo__item--atendimento { border-color: #f59e0b; }
+.resumo__item--manutencao  { border-color: #dc2626; }
+
+@media (max-width: 400px) {
+  .resumo__item strong { font-size: 1.3rem; }
+  .resumo__item span { font-size: 0.7rem; }
+}
