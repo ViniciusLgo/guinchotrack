@@ -1,31 +1,15 @@
-.App {
-  text-align: center;
+.topo {
+  background: #1e293b;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+.topo h1 { margin: 0; font-size: 1.4rem; }
+.topo p  { margin: 0.2rem 0 0; color: #cbd5e1; font-size: 0.9rem; }
+
+.conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.heart {
-  color: #ff0000;
-}
-
-.small {
-  font-size: 0.75rem;
-}
+.lista-frota li { padding: 0.3rem 0; }
