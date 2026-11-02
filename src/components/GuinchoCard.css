@@ -1,0 +1,44 @@
+.guincho-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
+}
+
+.guincho-card__topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guincho-card__topo h3 { margin: 0; font-size: 1.1rem; }
+
+.guincho-card__dados { margin: 0; display: grid; gap: 0.4rem; }
+.guincho-card__dados dt { font-size: 0.75rem; color: #64748b; text-transform: uppercase; }
+.guincho-card__dados dd { margin: 0; font-weight: 600; }
+
+/* Etiqueta de status a cor muda conforme a classe */
+.status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+.status--disponivel  { background: #dcfce7; color: #166534; }
+.status--atendimento { background: #fef3c7; color: #92400e; }
+.status--manutencao  { background: #fee2e2; color: #991b1b; }
+
+.botao {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-weight: 600;
+  background: #f59e0b;
+  color: #1c1f24;
+  cursor: pointer;
+}
+.botao:hover:not(:disabled) { background: #d97706; }
+.botao:disabled { background: #e2e8f0; color: #94a3b8; cursor: not-allowed; }

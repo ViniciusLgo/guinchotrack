@@ -13,3 +13,8 @@ export const FROTA = [
   { id: 12, codigo: 'G-12', placa: 'POI-2Q56', motorista: 'Diego Ramos',    status: 'disponivel',  local: 'Alagoinhas' },
 ];
 
+export const STATUS = {
+  disponivel:  'Disponível',
+  atendimento: 'Em atendimento',
+  manutencao:  'Manutenção',
+};
