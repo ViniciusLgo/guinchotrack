@@ -1,7 +1,15 @@
 import './App.css';
 import { FROTA } from './data/frota';
+import GuinchoCard from './components/GuinchoCard';
+
 
 function App() {
+
+  function handleDespachar(guincho) {
+    alert(`Despachando ${guincho.codigo} — motorista ${guincho.motorista}`);
+  }
+
+
   return (
     <div className="app">
       <header className="topo">
@@ -11,14 +19,16 @@ function App() {
  
       <main className="conteudo">
         <h2>Frota ({FROTA.length} guinchos)</h2>
- 
-        <ul className="lista-frota">
+
+        <div className="grade-frota">
           {FROTA.map((guincho) => (
-            <li key={guincho.id}>
-              <strong>{guincho.codigo}</strong> · {guincho.placa} · {guincho.motorista} · {guincho.status}
-            </li>
+            <GuinchoCard
+              key={guincho.id}
+              guincho={guincho}
+              onDespachar={handleDespachar}
+            />
           ))}
-        </ul>
+        </div>
       </main>
     </div>
   );
