@@ -30,3 +30,13 @@
 @media (min-width: 1024px) {
   .grade-frota { grid-template-columns: repeat(4, 1fr); }
 }
+
+.barra-frota {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.barra-frota h2 { margin: 0; }
