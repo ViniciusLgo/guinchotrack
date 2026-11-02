@@ -42,3 +42,6 @@
 }
 .botao:hover:not(:disabled) { background: #d97706; }
 .botao:disabled { background: #e2e8f0; color: #94a3b8; cursor: not-allowed; }
+
+.botao--inativo { background: #e2e8f0; color: #64748b; }
+.botao--inativo:hover { background: #cbd5e1; }

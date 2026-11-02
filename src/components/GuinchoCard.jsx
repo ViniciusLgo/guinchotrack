@@ -21,12 +21,12 @@ function GuinchoCard({ guincho, onDespachar }) {
  
       <button
         type="button"
-        className="botao"
+        className={disponivel ? 'botao' : 'botao botao--inativo'}
         onClick={() => onDespachar(guincho)}
-        disabled={!disponivel}
-      >
+      > 
         {disponivel ? 'Despachar' : 'Indisponível'}
       </button>
+
     </article>
   );
 }

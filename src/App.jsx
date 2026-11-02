@@ -8,6 +8,8 @@ import BarraProgresso from './components/BarraProgresso';
 import { useState, useEffect } from 'react';
 import { useToast } from './context/ToastContext';
 import Acordeao from './components/Acordeao';
+import ResumoFrota from './components/ResumoFrota';
+
 
 
 
@@ -196,8 +198,13 @@ function App() {
       </header>
 
       <main className="conteudo">
+        <ResumoFrota frota={frota} />
         <Abas abas={abas} />
       </main>
+
+       <footer className="rodape">
+        <p>GuinchoTrack  Atividade React </p>
+      </footer>
     </div>
   );
 }
